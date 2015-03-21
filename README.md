@@ -29,6 +29,8 @@
     ...
 ```
 
+# 使用样例
+
 ```html
 <div class="face-wrapper">
     <div id="face-canvas" class="face-canvas"></div>
