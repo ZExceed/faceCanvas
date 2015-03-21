@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>faceCanvas DEMO</title>
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/typo.css/1.1/typo.css">
+    <script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script>
+    <script src="../faceCanvas.js"></script>
+    <style>
+        .face-wrapper{
+            margin: 10px;
+            width: 350px;
+            height: 400px;
+            background: #FFDFBF;
+            border: 5px solid #fff;
+            box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+        }
+        .face-canvas{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="face-wrapper">
+    <div id="face-canvas" class="face-canvas"></div>
+</div>
+<script>
+$('#face-canvas').faceCanvas({
+    rectStyle: 'rgba(255,0,255,0.7)',  // 脸部矩形样式
+    pointStyle: 'rgba(255,0,127,0.7)', // 五官坐标样式
+    image: 'pic.jpg',
+    position: {"center":{"x":56.25,"y":30.333333},"eye_left":{"x":52.4425,"y":24.7225},"eye_right":{"x":65.55475,"y":29.094167},"height":18.666667,"mouth_left":{"x":46.97975,"y":32.807333},"mouth_right":{"x":59.06225,"y":36.176},"nose":{"x":55.138,"y":32.417833},"width":28,"left_eye_bottom":{"x":51.8155,"y":25.208},"left_eye_center":{"x":52.4425,"y":24.7225},"left_eye_left_corner":{"x":49.86575,"y":23.752333},"left_eye_pupil":{"x":52.4425,"y":24.7225},"left_eye_right_corner":{"x":54.59275,"y":26.160833},"left_eye_top":{"x":53.20475,"y":24.115167},"left_eyebrow_left_corner":{"x":49.393,"y":21.4805},"left_eyebrow_right_corner":{"x":58.28775,"y":24.558},"mouth_left_corner":{"x":46.97975,"y":32.807333},"mouth_lower_lip_bottom":{"x":51.525,"y":37.575667},"mouth_lower_lip_top":{"x":52.42025,"y":36.340167},"mouth_right_corner":{"x":59.06225,"y":36.176},"mouth_upper_lip_bottom":{"x":53.3915,"y":35.413833},"mouth_upper_lip_top":{"x":53.9505,"y":34.884333},"nose_left":{"x":51.06,"y":31.5305},"nose_right":{"x":58.9405,"y":33.170167},"nose_tip":{"x":55.138,"y":32.417833},"right_eye_bottom":{"x":65.28825,"y":29.655667},"right_eye_center":{"x":65.55475,"y":29.094167},"right_eye_left_corner":{"x":62.474,"y":28.633167},"right_eye_pupil":{"x":65.55475,"y":29.094167},"right_eye_right_corner":{"x":68.299,"y":29.902167},"right_eye_top":{"x":65.95325,"y":28.480333},"right_eyebrow_left_corner":{"x":62.986,"y":26.172167},"right_eyebrow_right_corner":{"x":71.35375,"y":28.419167}}
+});
+</script>
+</body>
+</html>
