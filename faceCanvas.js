@@ -6,8 +6,10 @@
  * licensed under the MIT
  */
 
-(function($){
+(function(){
     'use strict';
+
+    var $ = window.Zepto || window.jQuery;
 
     var mo = function(opts){
         this.options = $.extend({
@@ -89,5 +91,4 @@
             container: this
         }, opts));
     };
-})(Zepto);
-
+})();
