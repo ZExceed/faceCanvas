@@ -66,11 +66,9 @@
             rh = Math.round(imgH*position.height/100),
             rx = Math.round((canvasW/2)-(rw/2)),
             ry = Math.round((canvasH/2)-(rh/2));
-        this.context.beginPath();
         this.context.lineWidth   = 4;
         this.context.strokeStyle = this.options.rectStyle;
-        this.context.rect(rx, ry, rw, rh);
-        this.context.stroke();
+        this.context.strokeRect(rx, ry, rw, rh);
 
         // 绘制五官坐标
         var fx, fy, fw, fh; fw = fh = 6;
@@ -78,10 +76,8 @@
             if(position.hasOwnProperty(key) && key !== 'center' && position[key].x && position[key].y){
                 fx = Math.round((imgW*position[key].x/100)-sx-(fw/2));
                 fy = Math.round((imgH*position[key].y/100)-sy-(fh/2));
-                this.context.beginPath();
                 this.context.fillStyle = this.options.pointStyle;
                 this.context.fillRect(fx, fy, fw, fh);
-                this.context.stroke();
             }
         };
     };
